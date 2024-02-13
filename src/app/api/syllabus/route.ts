@@ -5,7 +5,7 @@ import { NextResponse } from "next/server"
 export const GET = async (req: Request, res: Response) => {
     try {
         const syllabus = getSyllabus();
-        return NextResponse.json({ message: "Ok", syllabus }, {
+        return NextResponse.json({ message: "Syllabus Fetch successfully", data:syllabus }, {
             status: 200
         })
     } catch (error) {
